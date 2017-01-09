@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import <WebKit/WebKit.h>
-#import "WebViewJavascriptBridge.h"
+//#import "WebViewJavascriptBridge.h"
+@import PCCWWebViewJavascriptBridge;
 
 @implementation AppDelegate {
     WebView* _webView;

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0ECB01491A0EEB3A0037FF4E /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB01461A0EEB3A0037FF4E /* WebViewJavascriptBridgeBase.m */; };
-		0ECB014A1A0EEB3A0037FF4E /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB01481A0EEB3A0037FF4E /* WKWebViewJavascriptBridge.m */; };
+		26DA09821E23636F0027FAA7 /* PCCWWebViewJavascriptBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DA09801E2362610027FAA7 /* PCCWWebViewJavascriptBridge.framework */; };
+		26DA09831E23636F0027FAA7 /* PCCWWebViewJavascriptBridge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26DA09801E2362610027FAA7 /* PCCWWebViewJavascriptBridge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C136A2517641106004C7401 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C136A2417641106004C7401 /* Cocoa.framework */; };
 		2C136A2F17641106004C7401 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C136A2D17641106004C7401 /* InfoPlist.strings */; };
 		2C136A3117641106004C7401 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C136A3017641106004C7401 /* main.m */; };
@@ -16,16 +16,25 @@
 		2C136A3817641106004C7401 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C136A3717641106004C7401 /* AppDelegate.m */; };
 		2C136A4217641236004C7401 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C136A4117641236004C7401 /* WebKit.framework */; };
 		2C136A5A17642704004C7401 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C136A5917642704004C7401 /* ExampleApp.html */; };
-		2C1562C6176BA9FF00B4AE50 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1562C4176BA9FF00B4AE50 /* WebViewJavascriptBridge.m */; };
-		2C3E7C491C5A8B8D00A1E322 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E7C481C5A8B8D00A1E322 /* WebViewJavascriptBridge_JS.m */; };
 		2CF17F5317D8AACF006E828B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CF17F5217D8AACF006E828B /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		26DA09841E23636F0027FAA7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				26DA09831E23636F0027FAA7 /* PCCWWebViewJavascriptBridge.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0ECB01451A0EEB3A0037FF4E /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
-		0ECB01461A0EEB3A0037FF4E /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
-		0ECB01471A0EEB3A0037FF4E /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
-		0ECB01481A0EEB3A0037FF4E /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		26DA09801E2362610027FAA7 /* PCCWWebViewJavascriptBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PCCWWebViewJavascriptBridge.framework; path = "../../../Library/Developer/Xcode/DerivedData/WebViewJavascriptBridge-ggroyapwvyogcvfohhtisuiqvbbu/Build/Products/Debug-iphonesimulator/PCCWWebViewJavascriptBridge.framework"; sourceTree = "<group>"; };
 		2C136A2117641106004C7401 /* ExampleApp-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExampleApp-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C136A2417641106004C7401 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2C136A2717641106004C7401 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -40,10 +49,6 @@
 		2C136A3717641106004C7401 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2C136A4117641236004C7401 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2C136A5917642704004C7401 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = SOURCE_ROOT; };
-		2C1562C2176BA9FF00B4AE50 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
-		2C1562C4176BA9FF00B4AE50 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
-		2C3E7C471C5A8B8D00A1E322 /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
-		2C3E7C481C5A8B8D00A1E322 /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
 		2CF17F5217D8AACF006E828B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +59,7 @@
 			files = (
 				2C136A4217641236004C7401 /* WebKit.framework in Frameworks */,
 				2C136A2517641106004C7401 /* Cocoa.framework in Frameworks */,
+				26DA09821E23636F0027FAA7 /* PCCWWebViewJavascriptBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 		2C136A2317641106004C7401 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26DA09801E2362610027FAA7 /* PCCWWebViewJavascriptBridge.framework */,
 				2C136A2417641106004C7401 /* Cocoa.framework */,
 				2C136A2617641106004C7401 /* Other Frameworks */,
 			);
@@ -104,7 +111,6 @@
 				2C136A3717641106004C7401 /* AppDelegate.m */,
 				2C136A5917642704004C7401 /* ExampleApp.html */,
 				2CF17F5217D8AACF006E828B /* MainMenu.xib */,
-				2C1562C1176BA9FF00B4AE50 /* WebViewJavascriptBridge */,
 				2C136A2B17641106004C7401 /* Supporting Files */,
 			);
 			path = "ExampleApp-OSX";
@@ -122,22 +128,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2C1562C1176BA9FF00B4AE50 /* WebViewJavascriptBridge */ = {
-			isa = PBXGroup;
-			children = (
-				2C3E7C471C5A8B8D00A1E322 /* WebViewJavascriptBridge_JS.h */,
-				2C3E7C481C5A8B8D00A1E322 /* WebViewJavascriptBridge_JS.m */,
-				0ECB01451A0EEB3A0037FF4E /* WebViewJavascriptBridgeBase.h */,
-				0ECB01461A0EEB3A0037FF4E /* WebViewJavascriptBridgeBase.m */,
-				0ECB01471A0EEB3A0037FF4E /* WKWebViewJavascriptBridge.h */,
-				0ECB01481A0EEB3A0037FF4E /* WKWebViewJavascriptBridge.m */,
-				2C1562C2176BA9FF00B4AE50 /* WebViewJavascriptBridge.h */,
-				2C1562C4176BA9FF00B4AE50 /* WebViewJavascriptBridge.m */,
-			);
-			name = WebViewJavascriptBridge;
-			path = ../../WebViewJavascriptBridge;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +138,7 @@
 				2C136A1D17641106004C7401 /* Sources */,
 				2C136A1E17641106004C7401 /* Frameworks */,
 				2C136A1F17641106004C7401 /* Resources */,
+				26DA09841E23636F0027FAA7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,11 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ECB01491A0EEB3A0037FF4E /* WebViewJavascriptBridgeBase.m in Sources */,
-				0ECB014A1A0EEB3A0037FF4E /* WKWebViewJavascriptBridge.m in Sources */,
-				2C3E7C491C5A8B8D00A1E322 /* WebViewJavascriptBridge_JS.m in Sources */,
 				2C136A3117641106004C7401 /* main.m in Sources */,
-				2C1562C6176BA9FF00B4AE50 /* WebViewJavascriptBridge.m in Sources */,
 				2C136A3817641106004C7401 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,10 +298,12 @@
 		2C136A3F17641106004C7401 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleApp-OSX/ExampleApp-OSX-Prefix.pch";
 				INFOPLIST_FILE = "ExampleApp-OSX/ExampleApp-OSX-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "WebViewJavascriptBridge.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -325,10 +314,12 @@
 		2C136A4017641106004C7401 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleApp-OSX/ExampleApp-OSX-Prefix.pch";
 				INFOPLIST_FILE = "ExampleApp-OSX/ExampleApp-OSX-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "WebViewJavascriptBridge.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
